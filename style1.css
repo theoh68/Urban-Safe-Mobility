@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #4169e1;
+}
+
+/* En-tête de la page web */
+.header {
+  padding: 30px;
+  text-align: center;
+  background-image: url("Fond Site.jpg");
+  background-color: white;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style de la barre de navigation principale */
+.topnav {
+  overflow: hidden;
+  background-color: #24225c;
+}
+
+/* Style des liens de la barre de navigation principale */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Changement de couleur quand on passe au-dessus */
+.topnav a:hover {
+  background-color: #fff;
+  color: #24225c;
+}
+
+/* Création de 2 colonnes inégales flottant côte à côte */
+/* Colonne gauche */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Colonne droite */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #4169e1;
+  padding-left: 20px;
+}
+
+/* Image */
+.image {
+  background-color: #c5e4ff;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Ajoute des cartes pour encadrer les sujets */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Arrange les colonnes flottantes */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Pied de page */
+.footer {
+  color: white;
+  padding: 20px;
+  text-align: center;
+  background: #00076f;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
